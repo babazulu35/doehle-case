@@ -1,0 +1,17 @@
+@mixin setfont($font-family-name, $font-family-width) {
+    font-family: $font-family-name, sans-serif;
+    font-style: normal;
+    font-weight: $font-family-width;
+}
+
+@mixin ffamily($font-family:'regular', $font-style:null) {
+    @if $font-family=='bold' {
+        @include setfont('Montserrat', 700);
+    }
+    @else if $font-family=='medium' {
+        @include setfont('Montserrat', 500);
+    }
+    @else if $font-family=='regular' {
+        @include setfont('Montserrat', 400);
+    }
+}
