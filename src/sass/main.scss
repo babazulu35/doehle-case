@@ -1,6 +1,8 @@
 // Third Part Sass linke Bootstrap ext...
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import "./generic/generic";
 // Get Settings Lİbs
 @import "./settings/settings";
 // ADd Tools Folder
 @import "./tools/tools";
+@import "./components/components";

@@ -1,3 +1,30 @@
-<p>
-  login-form works!
-</p>
+<div class="c-login-form">
+    <div class="c-login-form__header">
+        <h4>Welcome to Döhle</h4>
+        <span class="c-login-form__header-subtitle">
+        Introduce Your Self
+      </span>
+    </div>
+    <div class="c-login-form__body">
+        <form novalidate>
+            <div class="c-login-form__body-form">
+                <div class="form-row">
+                    <div class="col-md-12">
+                        <app-text-input type="text" placeholder="Username" icon="fas fa-user"></app-text-input>
+                        <app-text-input type="password" placeholder="Password" icon="fas fa-lock"></app-text-input>
+                        <span class="error-message" *ngIf="errorMessage">{{errorMessage}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="c-login-form__body-footer">
+                <app-button theme="primary" (clickEvent)="submitForm($event)" label="LOGIN"></app-button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="c-login-form__sperator"></div>
+<div class="c-login-form__userinfo">
+    We offer a wide range of services including financial, commercial, and technical support, as well as insurance and crew management. Apart from our complementary activities provided by the companies within the Group, our core competencies lie in chartering
+    as well as sale and purchase.
+</div>

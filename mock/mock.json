@@ -1,0 +1,98 @@
+{
+    "User": [{
+        "Id": 1,
+        "Username": "jhondoe",
+        "Password": "123456",
+        "Email": "jhondoe@mail.com",
+        "Fullname": "Jhon Doe",
+        "Avatar": "http://lorempixel.com/40/40/animals/",
+        "Roles": [
+            0, 1, 2, 3, 4, 5
+        ]
+    }, {
+        "Id": 2,
+        "Username": "janedoe",
+        "Password": "123456",
+        "Email": "jane@mail.com",
+        "Fullname": "Jane Doe",
+        "Avatar": "http://lorempixel.com/40/40/animals/",
+        "Roles": [
+            4, 5
+        ]
+    }, {
+        "Id": 3,
+        "Username": "board",
+        "Password": "123456",
+        "Email": "board@mail.com",
+        "Fullname": "Board Member",
+        "Avatar": "http://lorempixel.com/40/40/animals/",
+        "Roles": [
+            0, 1, 2, 3
+        ]
+    }],
+
+    "MainMenu": [{
+            "Id": 1,
+            "Name": "Dashboard",
+            "Roles": [0, 1, 2, 3],
+            "Url": "/dashboard"
+        },
+        {
+            "Id": 2,
+            "Name": "Company",
+            "Roles": [0, 1, 2, 3],
+            "Url": "/company"
+
+        },
+        {
+            "Id": 3,
+            "Name": "Manage Users",
+            "Roles": [2, 3],
+            "Url": "/manage-users"
+
+        },
+        {
+            "Id": 4,
+            "Name": "Sales",
+            "Roles": [2, 3, 4],
+            "Url": "/sales"
+
+        },
+        {
+            "Id": 5,
+            "Name": "Transactions",
+            "Roles": [1, 2, 3, 4],
+            "Url": "/transactions"
+        },
+        {
+            "Id": 6,
+            "Name": "Financial Statements",
+            "Roles": [0, 1, 2, 3, 4],
+            "Url": "/statements"
+        },
+        {
+            "Id": 7,
+            "Name": "Purchases",
+            "Roles": [0, 1, 2, 3, 4],
+            "Url": "/purchases"
+        },
+        {
+            "Id": 8,
+            "Name": "Products",
+            "Roles": [0, 1, 2, 3, 4],
+            "Url": "/products"
+        },
+        {
+            "Id": 8,
+            "Name": "Services",
+            "Roles": [0, 1, 2, 3, 4],
+            "Url": "/services"
+        },
+        {
+            "Id": 9,
+            "Name": "Human Resources",
+            "Roles": [2, 3, 5],
+            "Url": "/human-resources"
+        }
+    ]
+}

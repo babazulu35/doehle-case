@@ -1,0 +1,9 @@
+<div class="input-group" [ngClass]="{'input-group--underline': !icon}">
+    <div class="input-group-prepend" *ngIf="icon">
+        <span class="input-group-text"><i class="{{icon}}"></i></span>
+    </div>
+    <input type="{{type}}" class="form-control" placeholder="{{placeholder}}" required>
+    <div class="invalid-tooltip">
+
+    </div>
+</div>

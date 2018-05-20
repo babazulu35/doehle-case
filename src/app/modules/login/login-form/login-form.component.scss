@@ -1,0 +1,46 @@
+:host {
+    .c-login-form {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &__header {
+            color: #41484B;
+            felx: 1 100%;
+            &-subtitle {
+                font-size: 15px;
+            }
+            h4 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+        }
+        &__body {
+            flex: 1 100%;
+            background-color: #EAEAEB;
+            height: auto;
+            margin-top: 35px;
+            &-form {
+                padding: 50px;
+            }
+            &-footer {
+                background-color: #3F5364;
+                padding: 15px 0px;
+                display: flex;
+                justify-content: center
+            }
+        }
+        &__sperator {
+            width: 100%;
+            height: 2px;
+            margin-top: 50px;
+            background-color: #EAEAEB;
+        }
+        &__userinfo {
+            color: #929DA8;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 20px;
+        }
+    }
+}

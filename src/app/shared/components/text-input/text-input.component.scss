@@ -1,0 +1,35 @@
+.input-group {
+    margin-bottom: 20px;
+    .input-group-text {
+        border-radius: 0;
+        background-color: #76DEBE;
+        color: #fff;
+        width: 50px;
+        text-align: center;
+        border: 0;
+        i {
+            flex: 1;
+        }
+    }
+    .form-control {
+        padding: 18px;
+        border: 0;
+        height: 50px;
+        &:focus {
+            border-color: inherit;
+            box-shadow: 0 0 0 0.2rem rgba(122, 221, 190, 0.2);
+        }
+    }
+    &--underline {
+        border-bottom: 1px solid #9F9F9E;
+        margin-bottom: 0;
+        margin-right: 10px;
+        .form-control {
+            height: 40px;
+            padding: 0;
+            &:focus {
+                box-shadow: inherit;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+:host {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .content--item {
+        height: 140px;
+        width: 140px;
+        background-color: #EAEAEB;
+        padding-top: 35px;
+        margin-bottom: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-right: 15px;
+        color: #FFF;
+        transition: background-color 0.3s linear;
+        -webkit-transition: background-color 0.3s linear;
+        -moz-transition: background-color 0.3s linear;
+        span {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            background: #3D5262;
+            font-size: 12px;
+        }
+        i {
+            color: #76DEBE;
+            text-shadow: 3px 0px 5px #aaa;
+            transition: color 0.3s linear;
+            -webkit-transition: color 0.3s linear;
+            -moz-transition: color 0.3s linear;
+        }
+        &-text {}
+        &:hover {
+            background-color: rgba(64, 82, 98, 0.2);
+            cursor: pointer;
+            i {
+                transform: scale(1.1);
+                color: #fff;
+            }
+        }
+    }
+}

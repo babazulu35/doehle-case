@@ -1,0 +1,31 @@
+:host {
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 0;
+        li {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            padding: 10px;
+            padding-left: 20px;
+            color: #EAEAEB;
+            font-size: 14px;
+            background: lighten($color: #3F5364, $amount: 10);
+            margin-bottom: 3px;
+            &:hover,
+            &.selected {
+                cursor: pointer;
+                background: #efefef;
+                color: #3F5364
+            }
+        }
+    }
+}

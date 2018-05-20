@@ -1,6 +1,8 @@
 <div class="c-login__container">
     <div class="c-login__information">
+        <div style="position:absolute;left:0;top:0;width:100%;background:rgba(239,239,240,0.85);height:100%;"></div>
         <div style="position:absolute;top:50%;transform:translateY(-50%)">
+
             <div class="c-login__information-logo">
                 <i class="fas fa-cogs fa-3x"></i>
                 <h1><strong>D</strong>oehle</h1>
@@ -8,12 +10,17 @@
             <div class="c-login__information-text">
                 <h2>Enterprise Resource Planing</h2>
                 <span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid illum rerum natus, illo qui animi dolorum ipsa officia saepe architecto accusamus repellendus unde iure sint nam ut esse assumenda aperiam.
+                        We offer a wide range of services including financial, commercial, and technical support, as well as insurance and crew management. Apart from our complementary activities provided by the companies within the Group, our core competencies lie in chartering as well as sale and purchase.
           </span>
             </div>
         </div>
+        <div style="position: absolute;right:0;bottom:0">
+            <figure>
+                <img src="../../../assets/images/login/icon/footer-flag.png" alt="">
+            </figure>
+        </div>
     </div>
-    <div class="c-login__forms">
-        <router-outlet></router-outlet>
+    <div class="c-login__forms ">
+        <router-outlet [ngClass]="{'main-loader':isLoading}"></router-outlet>
     </div>
 </div>

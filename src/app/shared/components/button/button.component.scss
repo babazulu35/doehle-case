@@ -1,0 +1,56 @@
+:host {
+    display: inline-block;
+    line-height: 0px;
+    vertical-align: middle;
+    font-size: 13px;
+    white-space: nowrap;
+    &:focus,
+    &:hover,
+    &.active,
+    &:active {
+        outline: none;
+        &:focus {
+            outline: none;
+        }
+    }
+    &.c-button--primary {
+        button {
+            color: #3F5364;
+            background-color: #ffffff;
+            box-shadow: 0 0 13px 0px rgba(0, 0, 0, 0.06);
+            border-color: #3F5364;
+            width: 185px !important;
+            font-weight: 700;
+            &:hover {
+                background-color: darken($color: #ffffff, $amount: 20);
+                -webkit-transition: background-color 1s;
+                /* Safari */
+                transition: background-color 1s;
+            }
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgba(122, 221, 190, 0.2);
+            }
+        }
+    }
+    button {
+        width: 100%;
+        font-size: 13px;
+        padding: 15px;
+        border-radius: 24px;
+        height: 48px;
+        border-style: solid;
+        border-width: 1px;
+        line-height: 1.2em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        &:focus,
+        &:hover,
+        &.active,
+        &:active {
+            outline: none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<nav style="display:flex;height:70px;width:100%;justify-conter:space-between;align-items:center; flex-direction:row;flex-wrap:wrap;background:#ffffff;box-shadow:0px 0.3em 10px rgba(0, 0, 0, 0.1);border-bottom:3px solid #dcdce5;position:fixed;z-index:1024;">
+    <div style="display:flex;justify-content:flex-start;align-items:center;padding-left:20px">
+        <i class="fas fa-cogs fa-2x" style="color:#3F5364;margin-right:10px;"></i>
+        <span style="font-size:36px;color:#9F9F9E;font-weight:500"><strong style="color:#3F5364">D</strong>oehle</span>
+    </div>
+    <!-- User Fields -->
+    <div style="flex:1;align-self:center;text-align:right;padding-right:20px;">
+        <div style="display:flex;justify-content:flex-end;align-items:center">
+            <app-text-input type="text" placeholder="Search"></app-text-input>
+            <div style="width:40px;height:40px;background:#189AF7;display:flex;justify-content:center;align-items:center;color:#fff;margin-left:20px;"><i class="fas fa-at"></i></div>
+            <div style="width:40px;height:40px;background:#41484B;display:flex;justify-content:center;align-items:center;color:#fff"><i class="far fa-bell"></i></div>
+            <span (click)="logout()">Logout</span>
+        </div>
+    </div>
+</nav>
