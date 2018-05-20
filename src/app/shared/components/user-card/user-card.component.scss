@@ -1,0 +1,23 @@
+:host {
+    .c-user-card {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &__name {
+            color: #fff;
+            font-size: 12px;
+            margin-left: 10px
+        }
+        &__email {
+            flex: 1 100%;
+            text-align: left;
+            font-size: 9px;
+            margin-left: 50px;
+            margin-top: -13px;
+            color: #EAEAEB;
+        }
+    }
+}

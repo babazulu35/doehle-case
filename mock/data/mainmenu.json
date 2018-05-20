@@ -1,0 +1,48 @@
+{
+    "MainMenu": [{
+            "Id": 1,
+            "Name": "Dashboard",
+            "Roles": [0, 1, 2, 3, 4, 5],
+            "Url": "/dashboard"
+        },
+        {
+            "Id": 2,
+            "Name": "Company",
+            "Roles": [0, 1, 2, 3],
+            "Url": "/company"
+
+        },
+        {
+            "Id": 3,
+            "Name": "Manage Users",
+            "Roles": [2, 3],
+            "Url": "/manage-users"
+
+        },
+        {
+            "Id": 4,
+            "Name": "Sales",
+            "Roles": [2, 3, 4],
+            "Url": "/sales"
+
+        },
+        {
+            "Id": 5,
+            "Name": "Transactions",
+            "Roles": [1, 2, 3, 4],
+            "Url": "/transactions"
+        },
+        {
+            "Id": 8,
+            "Name": "Products",
+            "Roles": [0, 1, 2, 3, 4],
+            "Url": "/products"
+        },
+        {
+            "Id": 9,
+            "Name": "Human Resources",
+            "Roles": [2, 3, 5],
+            "Url": "/human-resources"
+        }
+    ]
+}

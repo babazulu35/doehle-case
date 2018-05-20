@@ -1,3 +1,4 @@
+import { AuthenticationService } from './services/authentication.service';
 
 import { Component,HostBinding, AfterViewInit  } from '@angular/core';
 import { MainLoaderService } from './services/main-loader.service';
@@ -14,7 +15,18 @@ export class AppComponent implements AfterViewInit {
   title = 'app';
   @HostBinding('class.main-loader') isLoading: boolean;
   
-  constructor(private router: Router) {}
+  constructor(
+    private authService: AuthenticationService,
+    private router: Router
+  ) {
+      this.authService.isLoggedIn$.subscribe(isLoggedIn => {
+        if(isLoggedIn) {
+          this.router.navigate(['dashboard']);
+        } else {
+          this.router.navigate(['login']);
+      }
+  })
+}
   // tslint:disable-next-line:use-life-cycle-interface
   ngAfterViewInit() {
     this.router.events.subscribe((event: RouterEvent) => {

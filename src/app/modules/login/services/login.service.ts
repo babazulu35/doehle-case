@@ -14,8 +14,9 @@ export class LoginService {
   login(username:string,password:string) {
     this.authService.login(username,password).subscribe(loginResult => {
       if(loginResult && loginResult.length) {
-        this.authService.userRoles$.next(loginResult[0].Roles);
-        this.authService.loginCompleted();       
+        this.authService.loginCompleted();  
+        this.authService.setUserLocalStorage(loginResult[0]);     
+        this.authService.setRolesLocalStorage(loginResult[0]);
       }
       else {
         this.serviceErrorHandling("Username or Password is Wrong");

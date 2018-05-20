@@ -43,6 +43,14 @@
                 transform: scale(1.1);
                 color: #fff;
             }
+            &:focus {
+                box-shadow: inherit;
+                outline: inherit;
+            }
+        }
+        &:focus {
+            box-shadow: inherit;
+            outline: inherit;
         }
     }
 }

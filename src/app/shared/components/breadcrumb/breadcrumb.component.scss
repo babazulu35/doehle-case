@@ -1,0 +1,14 @@
+:host {
+    .breadcrumb {
+        background: inherit;
+        border-radius: inherit;
+        padding: 0;
+    }
+    .breadcrumb-item {
+        font-size: 19px;
+        font-weight: 700;
+        color: #405262;
+        //text-shadow: 1px 0px 3px #9F9F9E;
+        padding-bottom: 5px;
+    }
+}

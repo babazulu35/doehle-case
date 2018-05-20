@@ -2,5 +2,13 @@
     "/User": {
         "target": "http://localhost:3000",
         "secure": false
+    },
+    "/MainMenu": {
+        "target": "http://localhost:3000",
+        "secure": false
+    },
+    "/Dashboard": {
+        "target": "http://localhost:3000",
+        "secure": false
     }
 }

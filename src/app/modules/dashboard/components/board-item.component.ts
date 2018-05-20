@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-board-item',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./board-item.component.scss']
 })
 export class BoardItemComponent implements OnInit {
+   
+  @Input() dashboardList;
 
   constructor() { }
 

@@ -14,8 +14,9 @@ export class LoginComponent implements OnInit {
   isLoading: boolean;
 
   ngOnInit() {
+
     this.authService.isLoggedIn$.subscribe(isLoggedIn => {
-      console.log("Is Logged In",isLoggedIn);
+     
       if(isLoggedIn) {
         this.router.navigate(['/dashboard']);
       }

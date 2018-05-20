@@ -1,0 +1,47 @@
+:host {
+    .c-navigation-user-field {
+        flex: 1;
+        align-self: center;
+        text-align: right;
+        padding-right: 20px;
+        &__itemset {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            &-item {
+                width: 40px;
+                height: 40px;
+                background: #41484B;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                margin-left: 10px;
+                &:hover {
+                    cursor: pointer;
+                    background: lighten($color: #41484B, $amount: 10)
+                }
+                &--blue {
+                    background: darken($color: #189AF7, $amount: 20);
+                    margin-left: 0px;
+                    &:hover {
+                        cursor: pointer;
+                        background: #189AF7;
+                    }
+                }
+                &--darkblue {
+                    background: #536d83;
+                    margin-left: 0px;
+                    &:hover {}
+                    &.selected {
+                        background: #189AF7;
+                    }
+                    &:focus {
+                        box-shadow: inherit;
+                        outline: inherit;
+                    }
+                }
+            }
+        }
+    }
+}

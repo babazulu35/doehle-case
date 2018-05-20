@@ -26,7 +26,9 @@ export class UserGuard implements CanActivate,  CanActivateChild {
 
   checkLogin(url:string,routeData): boolean {
         if(this.isLoggedIn) {
+          
           this.authService.isRoleAuthenticate(routeData["userRoles"]);
+          
           return routeData && routeData['userRoles'] ? this.authService.isRoleAuthenticate(routeData["userRoles"]) : true;
         }
         else {

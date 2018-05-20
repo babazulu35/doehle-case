@@ -1,0 +1,65 @@
+<div class="c-login-form">
+    <div class="c-login-form__header">
+        <h4>Welcome to Doehle</h4>
+        <span class="c-login-form__header-subtitle">
+            Please Fill The Form
+      </span>
+    </div>
+    <div class="c-login-form__body">
+        <form novalidate [formGroup]="loginForm" (ngSubmit)="submitForm()" autocomplete="off">
+            <div class="c-login-form__body-form">
+                <div class="form-row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" (focus)="onFocus()" name="username" formControlName='username' class="form-control" placeholder="Username" required>
+                            <div class="invalid-tooltip">
+
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                            </div>
+                            <input type="password" (focus)="onFocus()" name="password" formControlName='password' class="form-control" placeholder="Password" required>
+
+                            <div class="invalid-tooltip">
+
+                            </div>
+                        </div>
+
+                        <span class="error-message" *ngIf="errorMessage">{{errorMessage}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="c-login-form__body-footer">
+                <app-button theme="primary" (clickEvent)="submitForm($event)" label="LOGIN"></app-button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="c-login-form__sperator"></div>
+<div class="c-login-form__userinfo">
+    <!-- Demo Accounts -->
+    <div>
+        <span>SuperAdmin</span> |
+        <span>Username: jhondoe</span> |
+        <span>Password: 123456</span> |
+    </div>
+    <hr>
+    <div>
+        <span>Human Resources</span> |
+        <span>Username: board</span> |
+        <span>Password: 123456</span> |
+    </div>
+    <hr>
+    <div>
+        <span>Acounter</span> |
+        <span>Username: janedoe</span> |
+        <span>Password: 123456</span> |
+    </div>
+    <hr>
+</div>

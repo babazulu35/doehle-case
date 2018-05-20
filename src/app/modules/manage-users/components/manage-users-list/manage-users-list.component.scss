@@ -1,0 +1,23 @@
+:host {
+    display: block;
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #efefef
+    }
+    .c-manage-users-list {
+        &__function {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 10px 0px 10px 0px;
+            i {
+                color: #3F5364;
+                font-size: 26px;
+                &:hover {
+                    cursor: pointer;
+                    color: darken($color: #189AF7, $amount: 20)
+                }
+            }
+        }
+    }
+}

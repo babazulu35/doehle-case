@@ -1,5 +1,5 @@
 import { PasswordRecoveryComponent } from './password-recovery/password-recovery.component';
-import { LoginFormComponent } from './login-form/login-form.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes } from '@angular/router';

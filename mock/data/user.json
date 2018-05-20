@@ -1,0 +1,33 @@
+{
+    "User": [{
+        "Id": 1,
+        "Username": "jhondoe",
+        "Password": "123456",
+        "Email": "jhondoe@mail.com",
+        "Fullname": "Jhon Doe",
+        "Avatar": "http://lorempixel.com/40/40/animals/",
+        "Roles": [
+            3
+        ]
+    }, {
+        "Id": 2,
+        "Username": "janedoe",
+        "Password": "123456",
+        "Email": "jane@mail.com",
+        "Fullname": "Jane Doe",
+        "Avatar": "http://lorempixel.com/40/40/animals/",
+        "Roles": [
+            4
+        ]
+    }, {
+        "Id": 3,
+        "Username": "board",
+        "Password": "123456",
+        "Email": "board@mail.com",
+        "Fullname": "Board Member",
+        "Avatar": "http://lorempixel.com/40/40/animals/",
+        "Roles": [
+            5
+        ]
+    }]
+}

@@ -7,7 +7,7 @@
         "Fullname": "Jhon Doe",
         "Avatar": "http://lorempixel.com/40/40/animals/",
         "Roles": [
-            0, 1, 2, 3, 4, 5
+            3
         ]
     }, {
         "Id": 2,
@@ -17,7 +17,7 @@
         "Fullname": "Jane Doe",
         "Avatar": "http://lorempixel.com/40/40/animals/",
         "Roles": [
-            4, 5
+            4
         ]
     }, {
         "Id": 3,
@@ -27,14 +27,14 @@
         "Fullname": "Board Member",
         "Avatar": "http://lorempixel.com/40/40/animals/",
         "Roles": [
-            0, 1, 2, 3
+            5
         ]
-    }],
-
+    }]
+,
     "MainMenu": [{
             "Id": 1,
             "Name": "Dashboard",
-            "Roles": [0, 1, 2, 3],
+            "Roles": [0, 1, 2, 3, 4, 5],
             "Url": "/dashboard"
         },
         {
@@ -65,34 +65,74 @@
             "Url": "/transactions"
         },
         {
-            "Id": 6,
-            "Name": "Financial Statements",
-            "Roles": [0, 1, 2, 3, 4],
-            "Url": "/statements"
-        },
-        {
-            "Id": 7,
-            "Name": "Purchases",
-            "Roles": [0, 1, 2, 3, 4],
-            "Url": "/purchases"
-        },
-        {
             "Id": 8,
             "Name": "Products",
             "Roles": [0, 1, 2, 3, 4],
             "Url": "/products"
         },
         {
-            "Id": 8,
-            "Name": "Services",
-            "Roles": [0, 1, 2, 3, 4],
-            "Url": "/services"
-        },
-        {
             "Id": 9,
             "Name": "Human Resources",
             "Roles": [2, 3, 5],
             "Url": "/human-resources"
+        }
+    ]
+,
+    "Dashboard": [{
+            "Id": 1,
+            "Title": "Account",
+            "Icon": "fas fa-3x fa-euro-sign",
+            "Roles": [1, 2, 3, 4, 5],
+            "Url": "/account"
+        },
+        {
+            "Id": 2,
+            "Title": "Human Resources",
+            "Icon": "fas fa-3x fa-users",
+            "Roles": [2, 3, 5],
+            "Url": "/human-resources"
+        },
+        {
+            "Id": 3,
+            "Title": "Transport",
+            "Icon": "fas fa-3x fa-dolly",
+            "Roles": [1, 2, 3, 5],
+            "Url": "/transport"
+        },
+        {
+            "Id": 4,
+            "Title": "Shipping",
+            "Icon": "fas fa-3x fa-anchor",
+            "Roles": [1, 2, 3],
+            "Url": "/shipping"
+        },
+        {
+            "Id": 6,
+            "Title": "Quality",
+            "Icon": "fas fa-3x fa-glasses",
+            "Roles": [1, 2, 3, 4],
+            "Url": "/quality"
+        },
+        {
+            "Id": 7,
+            "Title": "Planing",
+            "Icon": "fas fa-3x fa-chart-pie",
+            "Roles": [1, 2, 3, 5],
+            "Url": "/planing"
+        },
+        {
+            "Id": 8,
+            "Title": "Products",
+            "Icon": "fas fa-3x fa-project-diagram",
+            "Roles": [1, 2, 3, 4],
+            "Url": "/products"
+        },
+        {
+            "Id": 10,
+            "Title": "Global Settings",
+            "Icon": "fas fa-3x fa-user-cog",
+            "Roles": [0, 1, 2, 3, 4, 5],
+            "Url": "/global-settings"
         }
     ]
 }

@@ -1,0 +1,23 @@
+<div class="c-manage-users-list__function" style="">
+    <i class="fas fa-user-plus"></i>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col" style="text-align:right">Settings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of list; let i = index">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{user?.Fullname}}</td>
+            <td>{{user?.Email}}</td>
+            <td style="text-align:right;padding-right:30px;"><i class="fas fa-users-cog"></i></td>
+
+        </tr>
+    </tbody>
+
+</table>

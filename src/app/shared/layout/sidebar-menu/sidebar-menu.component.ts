@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { LocalStorageService } from 'angular-2-local-storage/dist/local-storage.service';
 
 @Component({
   selector: 'app-sidebar-menu',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar-menu.component.scss']
 })
 export class SidebarMenuComponent implements OnInit {
+  
+  @Input() menuItemList;
 
-  constructor() { }
+  constructor(private localStorageService:LocalStorageService) { }
 
   ngOnInit() {
+
   }
 
 }

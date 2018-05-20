@@ -1,0 +1,59 @@
+{
+    "Dashboard": [{
+            "Id": 1,
+            "Title": "Account",
+            "Icon": "fas fa-3x fa-euro-sign",
+            "Roles": [1, 2, 3, 4, 5],
+            "Url": "/account"
+        },
+        {
+            "Id": 2,
+            "Title": "Human Resources",
+            "Icon": "fas fa-3x fa-users",
+            "Roles": [2, 3, 5],
+            "Url": "/human-resources"
+        },
+        {
+            "Id": 3,
+            "Title": "Transport",
+            "Icon": "fas fa-3x fa-dolly",
+            "Roles": [1, 2, 3, 5],
+            "Url": "/transport"
+        },
+        {
+            "Id": 4,
+            "Title": "Shipping",
+            "Icon": "fas fa-3x fa-anchor",
+            "Roles": [1, 2, 3],
+            "Url": "/shipping"
+        },
+        {
+            "Id": 6,
+            "Title": "Quality",
+            "Icon": "fas fa-3x fa-glasses",
+            "Roles": [1, 2, 3, 4],
+            "Url": "/quality"
+        },
+        {
+            "Id": 7,
+            "Title": "Planing",
+            "Icon": "fas fa-3x fa-chart-pie",
+            "Roles": [1, 2, 3, 5],
+            "Url": "/planing"
+        },
+        {
+            "Id": 8,
+            "Title": "Products",
+            "Icon": "fas fa-3x fa-project-diagram",
+            "Roles": [1, 2, 3, 4],
+            "Url": "/products"
+        },
+        {
+            "Id": 10,
+            "Title": "Global Settings",
+            "Icon": "fas fa-3x fa-user-cog",
+            "Roles": [0, 1, 2, 3, 4, 5],
+            "Url": "/global-settings"
+        }
+    ]
+}

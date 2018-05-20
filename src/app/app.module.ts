@@ -15,6 +15,7 @@ import { IndexComponent } from './shared/index/index.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { RequestResponseTimeService } from './interceptors/request-response-time.service';
 import { UserGuard } from './services/user.guard';
+import { LocalStorageModule } from 'angular-2-local-storage';
 
 
 @NgModule({
@@ -29,7 +30,11 @@ import { UserGuard } from './services/user.guard';
     HttpModule,
     HttpClientModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    LocalStorageModule.withConfig({
+      prefix: 'doehle',
+      storageType: 'localStorage'
+    })
   ],
   providers: [
     UserGuard,

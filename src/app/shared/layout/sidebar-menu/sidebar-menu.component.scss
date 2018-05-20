@@ -26,6 +26,10 @@
                 background: #efefef;
                 color: #3F5364
             }
+            &:focus {
+                outline: inherit;
+                box-shadow: inherit;
+            }
         }
     }
 }
